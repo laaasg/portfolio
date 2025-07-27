@@ -21,6 +21,8 @@ brew install --cask zed
 
 Login to GitHub and go through the prompts by just confirming
 ```bash
+git config --global user.email "laaasg@gmail.com"
+git config --global user.name "Laura Goncalves"
 gh auth login --hostname github.com --git-protocol ssh --web
 ```
 
