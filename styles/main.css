@@ -385,7 +385,7 @@ a.image-layer-container {
     opacity: 1;
     pointer-events: auto;
     transition: opacity 0.4s ease;
-    margin: 0 3rem 0 1rem;
+    margin: 0 1rem 0 3rem;
     font-family: "Montserrat";
     font-weight: 400;
 }
