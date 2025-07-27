@@ -13,10 +13,12 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-Install GitHub CLI and Zed
+Install GitHub CLI, Zed and other tools
 ```bash
 brew install gh
 brew install --cask zed
+brew install imagemagick
+brew install ffmpeg
 ```
 
 Login to GitHub and go through the prompts by just confirming
@@ -36,8 +38,14 @@ git clone git@github.com:laaasg/portfolio.git Documents/<directory>
 Start local server and open Chrome in a way to be able to access files:
 ```bash
 python3 server.py
+```
+
+If Chrome fails to load local files, close it and run the following command:
+```
 open /Applications/Google\ Chrome.app/ --args --allow-file-access-from-files;
 ```
+
+## Image and video things
 
 Find all jpg and png files and convert them to webp:
 ```bash
