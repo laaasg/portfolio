@@ -4,11 +4,13 @@
 :root {
     --dark-plum: #63264a;
     --dark-black: #2a1a23;
-    --lime-green: #f3f9d2;
-
-    /*need to replace*/
-    --dark-gray: #5d585c;
+    --dark-gray: #5e555a;
     --white: #ffffff;
+    --light-mint: #f3f9d2;
+    --lime-green: #c0d684;
+    --olive-green: #a3b18a;
+    /*need to replace*/
+
     --light-gray: #f1f1f1;
 }
 
@@ -35,13 +37,13 @@ body {
 
 /*default text style*/
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat_Alternates", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 h1 {
-    font-family: "Caveat", cursive;
+    font-family: "Montserrat_Alternates", sans-serif;
     font-size: 4em;
     font-weight: 900;
     line-height: 0.8em;
@@ -50,7 +52,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Caveat", cursive;
+    font-family: "Montserrat_Alternates", sans-serif;
     font-size: 3em;
     font-weight: 600;
     line-height: 0.8em;
@@ -62,7 +64,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Fredoka", cursive;
+    font-family: "Montserrat_Alternates", sans-serif;
     font-weight: 500;
     line-height: 1.2em;
 }
@@ -92,31 +94,12 @@ h5 {
     margin-bottom: 1.5em;
 }
 
-.work-entry ul,
-.blog-entry ul {
-    list-style-type: circle;
-    margin-left: 1.5em;
-    margin-bottom: 1.5em;
-    font-size: 1.1em;
-}
-
-.work-entry ul li {
-    padding-bottom: 1em;
-}
-
-.blog-entry ul li {
-    padding-bottom: 0em;
-}
-.work-entry h4 {
-    margin-bottom: 1em;
-}
-
 p,
 ul,
 ul li,
 ol,
 ol li {
-    font-family: "Rubik";
+    font-family: "Montserrat_Alternates", sans-serif;
 }
 
 p {
@@ -160,11 +143,34 @@ b {
 i {
     font-style: italic;
 }
+
+/*******/
+/**do we need this??
+
+.work-entry ul,
+.blog-entry ul {
+    list-style-type: circle;
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+}
+
+.work-entry ul li {
+    padding-bottom: 1em;
+}
+
+.blog-entry ul li {
+    padding-bottom: 0em;
+}
+.work-entry h4 {
+    margin-bottom: 1em;
+}
+**/
+
 /*grid + container system ******************************************************/
 
 .section-container {
     width: 100%;
-    /* min-height: 100vh;*/
     position: relative;
     z-index: 1;
     background-color: var(--white);
@@ -175,14 +181,14 @@ i {
 }
 
 .section-container.hero {
-    color: var(--dark-plum);
+    color: var(--dark-black);
     min-height: 30vh;
     height: auto;
     padding: 2em 0 1em 0;
 }
 
-.section-container.lilac {
-    background-color: var(--lime-green);
+.section-container.light-mint {
+    background-color: var(--light-mint);
 }
 
 /* containers */
@@ -408,7 +414,7 @@ i {
     top: 0;
     z-index: 1000;
     height: 10vh;
-    background-color: var(--lime-green);
+    background-color: var(--light-mint);
     display: flex;
     color: var(--dark-black);
     align-items: center;
@@ -527,7 +533,7 @@ i {
     z-index: 999;
     width: 100vw;
     height: 100vh;
-    background-color: var(--lime-green);
+    background-color: var(--light-mint);
     overflow-y: auto;
     display: block;
     padding-top: 10vh;
@@ -690,7 +696,7 @@ ul.narrow-list {
 .statement {
     color: var(--dark-plum);
     border-left: 1em solid var(--dark-plum);
-    background-color: var(--lime-green);
+    background-color: var(--light-mint);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -746,7 +752,7 @@ a.clean-hover {
 
 .full-banner {
     background-color: var(--dark-plum);
-    color: var(--lime-green);
+    color: var(--light-mint);
     text-align: center;
     margin-bottom: 3em;
     padding: 3em 0;
@@ -800,7 +806,7 @@ a.clean-hover {
 }
 
 .button-primary {
-    color: var(--lime-green);
+    color: var(--light-mint);
     border-radius: 10px;
     padding: 0.5em 1.5em;
     text-align: center;
@@ -823,7 +829,7 @@ a.clean-hover {
 }
 
 .button-primary:hover {
-    background-color: var(--lime-green);
+    background-color: var(--light-mint);
     color: var(--dark-plum);
     border: 0.2em solid var(--dark-plum);
 }
@@ -925,7 +931,7 @@ a.image-layer-container {
     height: 12px;
     width: 12px;
     margin: 0 5px;
-    background-color: var(--lime-green);
+    background-color: var(--light-mint);
     border: 1px solid var(--dark-plum);
     border-radius: 50%;
     display: inline-block;
@@ -935,48 +941,13 @@ a.image-layer-container {
 
 .gallery-dots .dot.active {
     background-color: var(--dark-plum);
-    border: 1px solid var(--lime-green);
+    border: 1px solid var(--light-mint);
 }
-
-/**pricing table ******************************/
-
-.pricing-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 2rem 0;
-    font-family: "Rubik";
-}
-
-.pricing-table th,
-.pricing-table td {
-    padding: 0.5rem;
-}
-
-.pricing-table th {
-    background-color: var(--white);
-    color: var(--dark-plum);
-    border-bottom: 1px solid var(--dark-plum);
-}
-
-.pricing-table tr:nth-child(even) {
-    background-color: var(--light-gray); /* lilac */
-}
-
-.pricing-table tr:nth-child(odd) {
-    background-color: var(--white);
-}
-
-.pricing-table td:first-child {
-    text-align: left;
-    font-weight: 400;
-}
-
-/***************************************/
 
 /*footer ************************************************************/
 .footer {
     color: var(--dark-black);
-    background-color: var(--lime-green);
+    background-color: var(--light-mint);
     height: inherit;
 }
 
