@@ -1,5 +1,35 @@
 # lauragoncalves.me
+
 Portfolio | Freelance
+
+## Installation
+
+Install Homebrew
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo >> $HOME/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
+Install GitHub CLI and Zed
+```bash
+brew install gh
+brew install --cask zed
+```
+
+Login to GitHub and go through the prompts by just confirming
+```bash
+gh auth login --hostname github.com --git-protocol ssh --web
+```
+
+Clone repository and the open it in Zed
+```bash
+git clone git@github.com:laaasg/portfolio.git Documents/<directory>
+```
+
+## Development
 
 Start local server and open Chrome in a way to be able to access files:
 ```bash
