@@ -2,10 +2,12 @@
 
 /*color palette*/
 :root {
-    --dark-purple: #320c18;
-    --dark-black: #14130f;
+    --dark-plum: #63264a;
+    --dark-black: #2a1a23;
+    --lime-green: #f3f9d2;
+
+    /*need to replace*/
     --dark-gray: #5d585c;
-    --light-lilac: #f7eefc;
     --white: #ffffff;
     --light-gray: #f1f1f1;
 }
@@ -33,7 +35,7 @@ body {
 
 /*default text style*/
 body {
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -173,14 +175,14 @@ i {
 }
 
 .section-container.hero {
-    color: var(--dark-purple);
+    color: var(--dark-plum);
     min-height: 30vh;
     height: auto;
     padding: 2em 0 1em 0;
 }
 
 .section-container.lilac {
-    background-color: var(--light-lilac);
+    background-color: var(--lime-green);
 }
 
 /* containers */
@@ -406,7 +408,7 @@ i {
     top: 0;
     z-index: 1000;
     height: 10vh;
-    background-color: var(--light-lilac);
+    background-color: var(--lime-green);
     display: flex;
     color: var(--dark-black);
     align-items: center;
@@ -525,7 +527,7 @@ i {
     z-index: 999;
     width: 100vw;
     height: 100vh;
-    background-color: var(--light-lilac);
+    background-color: var(--lime-green);
     overflow-y: auto;
     display: block;
     padding-top: 10vh;
@@ -686,9 +688,9 @@ ul.narrow-list {
 }
 
 .statement {
-    color: var(--dark-purple);
-    border-left: 1em solid var(--dark-purple);
-    background-color: var(--light-lilac);
+    color: var(--dark-plum);
+    border-left: 1em solid var(--dark-plum);
+    background-color: var(--lime-green);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -743,8 +745,8 @@ a.clean-hover {
 }
 
 .full-banner {
-    background-color: var(--dark-purple);
-    color: var(--light-lilac);
+    background-color: var(--dark-plum);
+    color: var(--lime-green);
     text-align: center;
     margin-bottom: 3em;
     padding: 3em 0;
@@ -768,7 +770,7 @@ a.clean-hover {
 
 .bar-fill {
     height: 100%;
-    background-color: var(--dark-purple);
+    background-color: var(--dark-plum);
     transition: width 0.4s ease;
 }
 
@@ -798,12 +800,12 @@ a.clean-hover {
 }
 
 .button-primary {
-    color: var(--light-lilac);
+    color: var(--lime-green);
     border-radius: 10px;
     padding: 0.5em 1.5em;
     text-align: center;
-    background-color: var(--dark-purple);
-    border: 0.2em solid var(--dark-purple);
+    background-color: var(--dark-plum);
+    border: 0.2em solid var(--dark-plum);
     width: fit-content;
     transition: width 0.4s ease;
 }
@@ -821,9 +823,9 @@ a.clean-hover {
 }
 
 .button-primary:hover {
-    background-color: var(--light-lilac);
-    color: var(--dark-purple);
-    border: 0.2em solid var(--dark-purple);
+    background-color: var(--lime-green);
+    color: var(--dark-plum);
+    border: 0.2em solid var(--dark-plum);
 }
 
 .button-primary.center {
@@ -923,8 +925,8 @@ a.image-layer-container {
     height: 12px;
     width: 12px;
     margin: 0 5px;
-    background-color: var(--light-lilac);
-    border: 1px solid var(--dark-purple);
+    background-color: var(--lime-green);
+    border: 1px solid var(--dark-plum);
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
@@ -932,8 +934,8 @@ a.image-layer-container {
 }
 
 .gallery-dots .dot.active {
-    background-color: var(--dark-purple);
-    border: 1px solid var(--light-lilac);
+    background-color: var(--dark-plum);
+    border: 1px solid var(--lime-green);
 }
 
 /**pricing table ******************************/
@@ -952,8 +954,8 @@ a.image-layer-container {
 
 .pricing-table th {
     background-color: var(--white);
-    color: var(--dark-purple);
-    border-bottom: 1px solid var(--dark-purple);
+    color: var(--dark-plum);
+    border-bottom: 1px solid var(--dark-plum);
 }
 
 .pricing-table tr:nth-child(even) {
@@ -974,7 +976,7 @@ a.image-layer-container {
 /*footer ************************************************************/
 .footer {
     color: var(--dark-black);
-    background-color: var(--light-lilac);
+    background-color: var(--lime-green);
     height: inherit;
 }
 
