@@ -429,6 +429,7 @@ a.image-layer-container {
 .container.footer-bottom {
     min-height: 60vh;
     padding-top: 10vh;
+    padding-bottom: 5vh;
 }
 
 .container.footer-bottom a {
@@ -544,6 +545,10 @@ p.big {
 
 /*buttons *********************************************************/
 
+.button-wrapper > a {
+    background-image: none;
+}
+
 .button {
     cursor: pointer;
     border-radius: 50px;
@@ -588,16 +593,39 @@ p.big {
 .button-wrapper {
     display: inline-flex;
     gap: 1em;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
 /*special clasess *********************************************************/
 
-.centered-content {
-    flex: 1;
+.grid.four.project-wrapper {
+    border: 3px solid var(--olive-green);
+    border-radius: 15px;
+}
+
+img.project-main {
+    border-radius: 15px 0px 0px 15px;
+    margin-bottom: 0;
+    height: 100%;
+}
+
+img.project-small {
+    padding-top: 1em;
+    width: fit-content;
+}
+
+.highlight.note {
+    background-color: var(--lime-green);
+    color: var(--dark-green);
+    width: fit-content;
+    padding: 0.2em 0.4em;
+    margin-bottom: 1.2em;
+    font-weight: 600;
+}
+
+.v-centered {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -690,33 +718,22 @@ p.big {
         grid-column: span 1 !important;
     }
 
-    .grid.section-title {
-        grid-template-columns: 1fr 1fr;
+    img.project-main {
+        border-radius: 12px 12px 0px 0px;
     }
 
-    .navbar .nav-item {
-        display: none;
+    .grid.four.project-wrapper {
+        gap: 0;
     }
 
-    .grid.mobile-image-first {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+    .project-content {
+        padding: 0 2em 0 2em;
     }
 
-    .grid.mobile-image-first .grid-item {
-        order: 2; /* default for all items */
-    }
-
-    .grid.mobile-image-first .grid-item.image-block {
-        order: 1; /* images come first */
-    }
-
-    .grid-item > img {
-        width: auto;
-        max-width: 80%;
+    img.main-round {
+        max-width: 300px;
+        border-radius: 50%;
+        margin: auto;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
