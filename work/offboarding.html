@@ -1,0 +1,538 @@
+<!doctype html>
+<html>
+    <head>
+        <!--Title and Description -->
+        <title>laura goncalves website</title>
+        <meta name="description" content="" />
+
+        <!--Setup--->
+        <meta charset="utf-8" />
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"
+        />
+
+        <!--Social Media Sharing -->
+        <meta property="og:title" content="ana sifuentes " />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="/styles/main.css" />
+
+        <!--Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Libraries -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://d3js.org/topojson.v3.min.js"></script>
+    </head>
+
+    <body>
+        <!-- nav bar -->
+        <div id="navbar-placeholder"></div>
+
+        <!-- Main image -->
+        <section class="section-container">
+            <!-- Default image -->
+            <img
+                class="main-page-img"
+                src="https://placehold.co/1080x720/EEE/31343C"
+            />
+        </section>
+
+        <section class="section-container">
+            <div class="container">
+                <div class="grid four">
+                    <!--title and details -->
+                    <div class="grid-item col-4-4">
+                        <h1>Offboarding</h1>
+                        <h3>
+                            → Designing a cancellation flow that is easy to use,
+                            and easier to reconsider
+                        </h3>
+                    </div>
+                    <div class="grid-item col-4-4">
+                        <ul class="project-details">
+                            <li><b>Role:</b> Product Designer</li>
+                            <br />
+
+                            <li>
+                                <b>Contributions:</b> Desk Research, UX/UI
+                                Design, Handoff Documentation
+                            </li>
+                            <br />
+
+                            <li><b>Timeline:</b> 2 sprints</li>
+                            <br />
+                        </ul>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <p>Add a summary here</p>
+                    </div>
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-max"></div>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h3>📐 Design process</h3>
+                    </div>
+                </div>
+
+                <div class="grid mobile-two">
+                    <a class="clean-hover" href="#understand">
+                        <div class="grid-item col-1-3 highlight spotlight-box">
+                            <h4>
+                                1. <br />
+                                Definition
+                            </h4>
+                        </div>
+                    </a>
+
+                    <a class="clean-hover" href="#research">
+                        <div class="grid-item col-1-3 highlight spotlight-box">
+                            <h4>2. <br />Research</h4>
+                        </div>
+                    </a>
+                    <a class="clean-hover" href="#propose">
+                        <div class="grid-item col-1-3 highlight spotlight-box">
+                            <h4>
+                                3.<br />
+                                Propose
+                            </h4>
+                        </div>
+                    </a>
+                    <a class="clean-hover" href="#design">
+                        <div class="grid-item col-1-3 highlight spotlight-box">
+                            <h4>
+                                4.<br />
+                                Design
+                            </h4>
+                        </div>
+                    </a>
+                    <a class="clean-hover" href="#hand-off">
+                        <div class="grid-item col-1-3 highlight spotlight-box">
+                            <h4>
+                                5.<br />
+                                Hand-off
+                            </h4>
+                        </div>
+                    </a>
+                    <a class="clean-hover" href="#results">
+                        <div class="grid-item col-1-3 highlight spotlight-box">
+                            <h4>
+                                6.<br />
+                                Results
+                            </h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container">
+            <div class="container work-entry">
+                <!--intro-->
+                <div class="grid four">
+                    <div class="grid-item col-4-4">
+                        <h3 id="definition">Definition</h3>
+
+                        <p>
+                            At Freeletics, most users purchase their
+                            subscriptions through the website, but their
+                            day-to-day interaction with the product happens
+                            entirely in the app. When it came time to cancel,
+                            this disconnect led to confusion: there was no clear
+                            way to manage subscription settings from within the
+                            app itself.
+                        </p>
+
+                        <div class="spacer-max"></div>
+                        <img src="https://placehold.co/1080x720/EEE/31343C" />
+                        <p class="small">
+                            previous plan page with no options to cancel
+                        </p>
+                        <div class="spacer-max"></div>
+                        <p>
+                            The result? A wave of support tickets to the
+                            Customer Experience Team and a string of negative
+                            reviews in the App Stores. Not only did this hurt
+                            our support team’s bandwidth, but it also damaged
+                            user trust and potentially discouraged new users
+                            from signing up.
+                        </p>
+                        <p>
+                            The goal was, then, designing an Offboarding Flow
+                            within the app that would:
+                        </p>
+                        <ol class="narrow-list">
+                            <li>
+                                Make cancelling the subscription easy enough to
+                                build trust and let users go in a good note,
+                                still satisfied with the product
+                            </li>
+                            <li>
+                                At the same time, try to reduce the number of
+                                active cancellations by offering alternatives
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!--1 understand ---------------------------------------------->
+
+                <div class="grid four">
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-max"></div>
+                    </div>
+                    <div class="grid-item col-4-4">
+                        <h3 id="research">Research</h3>
+
+                        <p>
+                            To understand why users were cancelling their
+                            subscriptions, I analyzed results from our ongoing
+                            <b>Cancellation Survey</b> — a SurveyMonkey pop-up
+                            that appears right after someone cancels via the
+                            website. While the data provided useful insights, it
+                            came with a catch: only a small percentage of users
+                            actually respond to it (<b>[TK]%</b>), so results
+                            should be taken with a grain of salt.
+                        </p>
+                        <p>
+                            In parallel, I reviewed complaints from both the
+                            <b>App Store</b> and <b>Google Play</b> reviews. One
+                            theme popped up repeatedly, and it wasn’t news to
+                            the team:
+                            <b
+                                >subscriptions renewed automatically without any
+                                reminder</b
+                            >. While users were clearly frustrated by this, the
+                            <b>auto-renewal model</b> was a deliberate business
+                            decision, and, so far, not something up for change.
+                        </p>
+                        <p>
+                            I also explored how other products handled
+                            subscription cancellations to gather inspiration.
+                            The most striking example was <b>Spotify</b> — a
+                            relevant comparison, since purchases there can also
+                            originate from various platforms. At former times,
+                            they also added a <b>“goodbye” playlist</b> to the
+                            flow. It brought a light, human touch to a tedious
+                            and transactional process.
+                        </p>
+                        <p>
+                            Taking all of this into account a pattern began to
+                            emerge: most cancellations were driven by a few
+                            recurring and sometimes preventable
+                            <b>frustrations</b>. That sparked an idea:
+                        </p>
+                        <blockquote>
+                            <b>
+                                What if we acknowledged these pain points
+                                upfront — and offered timely, targeted solutions
+                                before the user even hit “cancel”?
+                            </b>
+                        </blockquote>
+
+                        <div class="spacer-max"></div>
+                        <img src="https://placehold.co/1080x720/EEE/31343C" />
+                        <p class="small">
+                            main susbcritpion cancellation reasons
+                        </p>
+                        <div class="spacer-max"></div>
+                    </div>
+
+                    <!--2 define ---------------------------------------------->
+
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-max"></div>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h3 id="propose">Propose</h3>
+                        <p>
+                            After identifying the main reasons users were
+                            cancelling, I brought a proposal to the team:
+                            <b
+                                >Start the cancellation flow with a short survey
+                                to gather more reliable data.</b
+                            >
+                            This would help us better understand what users felt
+                            was missing and turn that into actionable insights.
+                            Right after completing the survey, users would land
+                            on a screen that addressed their specific concern.
+                            Wherever possible, we’d offer a solution to help
+                            them stay with Freeletics while still giving them
+                            the option to cancel if they chose to.
+                        </p>
+
+                        <div class="spacer-max"></div>
+                        <img src="https://placehold.co/1080x720/EEE/31343C" />
+                        <p class="small">
+                            wireframe with examples of proposed flow
+                        </p>
+                        <div class="spacer-max"></div>
+
+                        <p>
+                            I translated this idea into a wireframe and brought
+                            it to our <b>pre-refinement meeting</b>. This is a
+                            session where I present early-stage design ideas for
+                            feedback from developers and the Product Manager.
+                            (Curious about how I run these meetings? I wrote
+                            this post [TK WITH LINK] explaining the format and
+                            why it works.) During this discussion, we uncovered
+                            two important opportunities:
+                        </p>
+
+                        <ul class="narrow-list">
+                            <li>
+                                <b
+                                    >We could directly address the top
+                                    cancellation reasons</b
+                                >
+                                by offering meaningful alternatives like pausing
+                                subscription.
+                            </li>
+                            <li>
+                                <b>Subscription management varied by platform</b
+                                >, meaning the flow had to adapt based on
+                                whether the user subscribed via the App Store,
+                                Google Play, or our website.
+                            </li>
+                        </ul>
+
+                        <p>
+                            I also partnered with the Product Manager to pitch
+                            an optional <b>renewal reminder feature</b>. This
+                            was aimed at users who still liked the product but
+                            wanted to avoid the dreaded surprise charges. In
+                            this conversation with the team, we also agreed that
+                            it wouldn’t be feasible to address every
+                            cancellation reason from the start. Instead, we
+                            decided to focus on the most common and actionable
+                            ones: <b>unexpected renewals</b> and users wanting
+                            to <b>take a break due to injury or pregnancy</b>.
+                        </p>
+
+                        <p>
+                            To keep delivery manageable, we split the work into
+                            two phases:
+                        </p>
+
+                        <ol class="narrow-list">
+                            <li>
+                                <b>The new cancellation flow,</b> offering
+                                renewal reminders and the option to pause the
+                                subscription, and
+                            </li>
+                            <li>
+                                <b>A redesign of the plan page</b>, giving users
+                                more clarity around subscription status and
+                                billing details upfront.
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-max"></div>
+                    </div>
+                    <div class="grid-item col-4-4">
+                        <h3 id="design">Design</h3>
+
+                        <p>
+                            After aligning with the team, I had a
+                            <b>clear picture</b> of what was feasible to
+                            deliver, including the
+                            <b>technical limitations</b> of each platform and
+                            the <b>content flexibility</b> we had. With the PM’s
+                            support to introduce a <b>renewal reminder flow</b>,
+                            it was time to turn insights into screens.
+                        </p>
+                        <p>
+                            My main goal was to create an experience that
+                            allowed us to <b>gather data</b> and
+                            <b>offer alternatives</b> without overwhelming
+                            users. After all, cancellation is a
+                            <b>sensitive moment</b>, and by this point, many
+                            users are already feeling <b>frustrated</b> or
+                            <b>let down</b> by the brand.
+                        </p>
+                        <p>
+                            I focused on keeping the flow <b>simple</b>,
+                            <b>clear</b>, and <b>user-guided</b>. The design was
+                            built around <b>three core templates</b>, adapted to
+                            each user context:
+                        </p>
+
+                        <ul class="narrow-list">
+                            <li>Survey screen</li>
+                            <li>Follow-up screen</li>
+                            <li>Solution screen</li>
+                        </ul>
+
+                        <div class="spacer-max"></div>
+                        <img src="https://placehold.co/1080x720/EEE/31343C" />
+                        <p class="small">
+                            [Image: One of each — template + variations]
+                        </p>
+                        <div class="spacer-max"></div>
+
+                        <p>
+                            Inspired by Spotify’s “goodbye playlist,” I also
+                            proposed a <b>Goodbye Workout</b>: a session users
+                            could save and complete later. It was meant to leave
+                            them with a positive final touchpoint.
+                            Unfortunately, due to time and development
+                            constraints, we had to discard this idea.
+                        </p>
+
+                        <div class="spacer-max"></div>
+                        <img src="https://placehold.co/1080x720/EEE/31343C" />
+                        <p class="small">[Image: Goodbye Workout]</p>
+                        <div class="spacer-max"></div>
+
+                        <p>
+                            For the <b>Plan Page redesign</b>, my focus was on
+                            <b>clarity and predictability</b>. I wanted users to
+                            quickly understand their subscription details such
+                            as status, renewal dates, and purchase method
+                            without digging through menus or reading through
+                            walls of text. I introduced
+                            <b>color-coded tags</b> for subscription status and
+                            rearranged the layout to make key information more
+                            scannable at a glance.
+                        </p>
+
+                        <div class="spacer-max"></div>
+                        <img src="https://placehold.co/1080x720/EEE/31343C" />
+                        <p class="small">[image: plan page]</p>
+                        <div class="spacer-max"></div>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-max"></div>
+                    </div>
+                    <div class="grid-item col-4-4">
+                        <h3 id="hand-off">Hand-off Documentation</h3>
+
+                        <p>
+                            As mentioned earlier, each platform came with its
+                            own limitations and capabilities when it came to
+                            subscription management. This meant I had to design
+                            and deliver <b>slightly different flows</b> for
+                            users who purchased subscriptions via
+                            <b>Android, iOS, and the Web</b>: sometimes just one
+                            extra sentence, sometimes an additional button.
+                        </p>
+
+                        <p>
+                            To keep the handoff organized and manageable, I
+                            structured the documentation in
+                            <b>clearly separated sections</b>, one for each
+                            platform. Each flow was clustered in its own area,
+                            with visual cues and clear annotations to help
+                            developers quickly navigate the file.
+                            <b>Flowcharts and directional arrows</b>
+                            are a must for me in any dev handoff, so I included
+                            them as part of the package.
+                        </p>
+
+                        <div class="spacer-max"></div>
+                        <img src="https://placehold.co/1080x720/EEE/31343C" />
+                        <p class="small">
+                            Screenshot from Figma showing Web, Android, and App
+                            Store flows
+                        </p>
+                        <div class="spacer-mid"></div>
+
+                        <img src="https://placehold.co/1080x720/EEE/31343C" />
+                        <p class="small">
+                            Pausing subscription screen for Android and Web]
+                        </p>
+
+                        <div class="spacer-max"></div>
+
+                        <p>
+                            The <b>Plan Page handoff</b> followed a similar
+                            logic. Since there were many plan variations and
+                            combinations of details that could appear, I decided
+                            to deliver this part as a <b>single-page guide</b>.
+                            It included all the possible variant options and
+                            edge cases in one place — a strategy to help both me
+                            and the developers stay aligned and avoid confusion
+                            from too many near-identical screens.
+                        </p>
+
+                        <div class="spacer-max"></div>
+                        <img src="https://placehold.co/1080x720/EEE/31343C" />
+                        <p class="small">[Image: Plan Page handoff]</p>
+                        <div class="spacer-max"></div>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-max"></div>
+                    </div>
+                    <div class="grid-item col-4-4">
+                        <h3 id="results">Results</h3>
+                        <p>
+                            The PM recommended launching the new flow as an
+                            <b>A/B test </b>to assess whether making
+                            cancellations easier would lead to an increase in
+                            churn. The opposite happened: while more users
+                            explored the new flow,
+                            <b>
+                                fewer actually followed through with
+                                cancellation </b
+                            >on the variant side.
+                        </p>
+
+                        <p>
+                            The <b>subscription reminder</b> proved to be the
+                            most effective alternative, with <b>[TK]% </b>of
+                            users selecting it and choosing to stay. The
+                            <b>pause subscription</b>
+                            option was less popular, likely due to its limited
+                            availability — only for Android users via the Play
+                            Store, and only in certain countries.
+                        </p>
+
+                        <p>
+                            With the addition of the subscription reminder
+                            feature, we managed to <b>retain [TK] users </b>who
+                            were about to leave Freeletics — resulting in a
+                            <b>20% reduction in churn</b> for the test group.
+                        </p>
+
+                        <p>
+                            This flow reminded me that good UX isn’t just about
+                            guiding users — it’s about listening, even when
+                            they’re halfway out the door. Turns out, helping
+                            people leave gracefully is sometimes the best way to
+                            make them stay.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-max"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--footer load -->
+        <div id="footer-placeholder"></div>
+
+        <!-- Scripts -->
+        <script src="../code/menu-footer.js"></script>
+    </body>
+</html>

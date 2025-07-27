@@ -44,7 +44,7 @@ body {
 }
 
 h1 {
-    font-family: "Montserrat_Alternates", sans-serif;
+    font-family: "Montserrat Alternates", sans-serif;
     font-size: 4em;
     font-weight: 900;
     line-height: 0.8em;
@@ -53,7 +53,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Montserrat_Alternates", sans-serif;
+    font-family: "Montserrat Alternates", sans-serif;
     font-size: 3em;
     font-weight: 600;
     line-height: 0.8em;
@@ -65,7 +65,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Montserrat_Alternates", sans-serif;
+    font-family: "Montserrat Alternates", sans-serif;
     font-weight: 500;
     line-height: 1.2em;
 }
@@ -105,22 +105,26 @@ ol li {
 
 p {
     font-size: 1em;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.8em;
     margin-bottom: 1em;
+    font-family: "Montserrat";
 }
 
 ul {
     margin-bottom: 1em;
+    font-family: "Montserrat";
 }
-ul li {
+ul li,
+ol li {
     padding-bottom: 0.5em;
-    font-weight: 200;
     line-height: 1.5em;
 }
 
 ol {
-    padding-left: 1.5em;
+    font-family: "Montserrat";
+    padding: 1em 2em;
+    width: 80%;
 }
 
 b {
@@ -243,16 +247,6 @@ a.image-layer-container {
     padding-right: clamp(1rem, 6vw, 2rem);
     margin: 0 auto;
     box-sizing: border-box;
-}
-
-/*full width imgs*/
-.section-container.full-img {
-    min-height: auto;
-}
-.section-container.full-img > picture > img {
-    width: 100%;
-    height: auto;
-    display: block;
 }
 
 /* Grid System */
@@ -598,6 +592,16 @@ p.big {
 
 /*special clasess *********************************************************/
 
+.main-page-img {
+    width: 100%;
+}
+
+ul.narrow-list,
+ol.narrow-list {
+    padding: 4em;
+    margin: 0;
+}
+
 .grid.four.project-wrapper {
     border: 3px solid var(--olive-green);
     border-radius: 15px;
@@ -627,6 +631,10 @@ img.project-small {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+ul.project-details {
+    list-style-type: none;
 }
 
 .spacer-mid {
@@ -735,5 +743,10 @@ img.project-small {
         border-radius: 50%;
         margin: auto;
         display: block;
+    }
+
+    /* Override for mobile-two to force 2 per row */
+    .mobile-two {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
