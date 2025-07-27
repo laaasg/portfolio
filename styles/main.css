@@ -381,18 +381,14 @@ a.image-layer-container {
     margin-right: auto;
 }
 
-.nav-item {
+.nav-item,
+nav-item.hidden {
     opacity: 1;
     pointer-events: auto;
     transition: opacity 0.4s ease;
     margin: 0 1rem 0 3rem;
     font-family: "Montserrat";
     font-weight: 400;
-}
-
-.nav-item.hidden {
-    opacity: 0;
-    pointer-events: none;
 }
 
 .navbar > .navbar-content a {
@@ -748,5 +744,10 @@ ul.project-details {
     /* Override for mobile-two to force 2 per row */
     .mobile-two {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-item.hidden {
+        opacity: 0;
+        pointer-events: none;
     }
 }
