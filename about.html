@@ -41,7 +41,7 @@
         #about-section .about-wrapper {
           display: flex;
           flex-direction: row;
-          align-items: flex-start; /* align top */
+          align-items: flex-start;
           gap: 2rem;
           max-width: 900px;
           margin: 0 auto;
@@ -49,16 +49,16 @@
         }
 
         #about-section .about-photo {
-          flex: 0 0 225px; /* fixed width for 3:4 ratio */
-          aspect-ratio: 3 / 4;
-          max-width: 225px;
+          flex: 0 0 260px; /* slightly larger */
+          aspect-ratio: 1 / 1; /* square */
+          max-width: 260px;
         }
 
         #about-section .about-photo img {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          border-radius: 12px;
+          border-radius: 50%; /* make it round */
           display: block;
         }
 
@@ -83,19 +83,14 @@
         @media (max-width: 768px) {
           #about-section .about-wrapper {
             flex-direction: column;
-            padding-left: 1rem;  /* horizontal padding */
-            padding-right: 1rem; /* horizontal padding */
+            padding-left: 1rem;
+            padding-right: 1rem;
           }
 
           #about-section .about-photo {
-            max-width: 100%;
+            max-width: 200px;
             width: 100%;
-            aspect-ratio: auto;
-            margin-bottom: 1.5rem;
-          }
-
-          #about-section .about-photo img {
-            height: auto;
+            margin: 0 auto 1.5rem auto;
           }
 
           #about-section .about-text {
@@ -116,12 +111,12 @@
 
           <div class="about-wrapper">
             <div class="about-photo">
-              <img src="https://picsum.photos/360/640" alt="Placeholder image of Laura" />
+              <img src="/assets/me-and-olivia.jpeg" alt="Placeholder image of Laura" />
             </div>
 
             <div class="about-text">
               <p class="big">
-                Nice to meet you! I'm Laura: <b>designer</b>, cat lover and amateur cook.
+                Nice to meet you! I'm Laura: designer, cat lover and amateur cook.
               </p>
               <div class="spacer-min"></div>
 
@@ -161,9 +156,9 @@
                 <div class="button primary">Download my CV</div>
               </a>
 
-              <div class="spacer-max"></div>
+              <div class="spacer-mid"></div>
 
-              <p class="big">Why not get in touch?</p>
+              <p class="big">Let's chat!</p>
               <!--laura links here -->
               <p>
                   👩🏽‍💻
