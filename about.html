@@ -35,77 +35,155 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://d3js.org/d3.v6.min.js"></script>
         <script src="https://d3js.org/topojson.v3.min.js"></script>
+
+        <!-- SPECIFIC CSS FOR WRAPPER -->
+        <style>
+        #about-section .about-wrapper {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start; /* align top */
+          gap: 2rem;
+          max-width: 900px;
+          margin: 0 auto;
+          padding: 2rem 0;
+        }
+
+        #about-section .about-photo {
+          flex: 0 0 225px; /* fixed width for 3:4 ratio */
+          aspect-ratio: 3 / 4;
+          max-width: 225px;
+        }
+
+        #about-section .about-photo img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 12px;
+          display: block;
+        }
+
+        #about-section .about-text {
+          flex: 1 1 auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+        }
+
+        #about-section .about-text p {
+          font-size: 1rem;
+          line-height: 1.5;
+          margin-bottom: 1rem;
+        }
+
+        #about-section .about-text .big {
+          font-size: 1.4rem;
+          font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+          #about-section .about-wrapper {
+            flex-direction: column;
+            padding-left: 1rem;  /* horizontal padding */
+            padding-right: 1rem; /* horizontal padding */
+          }
+
+          #about-section .about-photo {
+            max-width: 100%;
+            width: 100%;
+            aspect-ratio: auto;
+            margin-bottom: 1.5rem;
+          }
+
+          #about-section .about-photo img {
+            height: auto;
+          }
+
+          #about-section .about-text {
+            margin-top: 1rem;
+          }
+        }
+
+        </style>
     </head>
 
     <body>
         <!-- nav bar -->
         <div id="navbar-placeholder"></div>
 
-        <section class="section-container">
+        <div class="spacer-max"></div>
+
+        <section id="about-section">
+
+          <div class="about-wrapper">
+            <div class="about-photo">
+              <img src="https://picsum.photos/360/640" alt="Placeholder image of Laura" />
+            </div>
+
+            <div class="about-text">
+              <p class="big">
+                Nice to meet you! I'm Laura: <b>designer</b>, cat lover and amateur cook.
+              </p>
+              <div class="spacer-min"></div>
+
+              <p class="small">
+                My journey with design began at the age of 12, when I read
+                <b>"The Non-Designers Design Book"</b>. It's a great book, by the way!
+                That early spark led me to pursue a technical course in Multimedia,
+                where I studied design fundamentals alongside Advertising, Photography,
+                and Videomaking.
+              </p>
+
+              <p class="small">
+                While earning my bachelor’s degree in Graphic Design,
+                I was introduced to UX Design —<b> and everything changed</b>.
+                I landed an internship at Itaú Unibanco,
+                Brazil’s largest bank and one of the country’s most respected design institutions.
+                During my time there, I realized that UX Design had the power to drive real impact
+                and solve complex business problems. I was hooked.
+              </p>
+
+              <p class="small">
+                It’s been over six years since that first encounter with Product Design,
+                and I’m still deeply passionate about the craft. <b>I love bringing ideas to life</b>,
+                collaborating with peers, and shaping concepts into thoughtful,
+                effective solutions.
+              </p>
+
+              <p class="small">
+                Outside of work, I enjoy cooking and baking, spending time with my cat Olívia,
+                and reading. I’m also learning to play the guitar and working on my German.
+                If you'd like to chat about design, collaboration, or just grab a coffee and exchange ideas —
+                feel free to reach out. I’m always up for a good conversation.
+              </p>
+
+              <div class="spacer-mid"></div>
+              <a href="">
+                <div class="button primary">Download my CV</div>
+              </a>
+
+              <div class="spacer-max"></div>
+
+              <p class="big">Why not get in touch?</p>
+              <!--laura links here -->
+              <p>
+                  👩🏽‍💻
+                  <a href="https://www.linkedin.com/in/lausang">
+                      Linkedin
+                  </a>
+                  <br />📩
+                  <a href="mailto:hello@lauragoncalves.me"> Email </a>
+              </p>
+
+            </div>
+
             <div class="spacer-max"></div>
-            <div class="container">
-                <div class="grid">
-                    <div class="grid-item col-2-3 v-centered">
-                        <p class="big">
-                            Nice to meet you! I'm Laura: designer, cat lover and
-                            amateur cook.
-                        </p>
-                        <div class="spacer-min"></div>
-
-                        <p class="small">
-                            I had my first contact with design when I was 12,
-                            when I read "Designer for non-designers" — great
-                            book, by the way. After that, I had a technical
-                            course in Multimedia, where I learned design
-                            fundamentals among other disciplines like
-                            Advertising, Photography and Videomaking.
-                        </p>
-
-                        <p class="small">
-                            During my bachelors in Graphic Design, I had my
-                            first contact with UX Design. I was lucky enough to
-                            land a internship at Brazil largest bank at the time
-                            — and also most respected design institution. In my
-                            time in Itaú Unibanco, I realized that UX Design
-                            would bring me to new heights, and the possibility
-                            of solving business problems and bringing real
-                            impact through the power of design fascinated me.
-                        </p>
-
-                        <p class="small">
-                            6+ years went by ever since that first contact with
-                            Product Design and I still find mylsef amazed by
-                            this work. I love bringing new ideas into life,
-                            discussing them among my peers until they are shaped
-                            into something
-                        </p>
-
-                        <p class="small">
-                         In my free time, I like cooking and baking, spending time with my cat Olívia
-                      and reading. I'm also trying to learn how to play guitar and working on my German
-                   skills.
-
-                        </p>
-                        <div class="spacer-mid"></div>
-
-                        <a href="">
-                            <div class="button primary">
-                                Download my CV
-                            </div>
 
 
-                        <div class="spacer-max"></div>
 
-                        <p class="big">Why not get in touch?</p>
-                        <!--laura links here -->
-                        <p>
-                            👩🏽‍💻
-                            <a href="https://www.linkedin.com/in/lausang">
-                                Linkedin
-                            </a>
-                            <br />📩
-                            <a href="mailto:hello@lauragoncalves.me"> Email </a>
-                        </p>
+          </div>
+
+
+
 
                         <div class="spacer-mid"></div>
                     </div>
