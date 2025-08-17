@@ -1,0 +1,112 @@
+
+            .about-wrapper {
+                display: flex;
+                flex-direction: row;
+                align-items: stretch;
+                gap: 2rem;
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 2rem;
+            }
+
+            .about-photo {
+                flex: 1 1 300px;
+                max-width: 300px;
+            }
+
+            .about-photo img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 12px;
+                display: block;
+            }
+
+            .about-text {
+                flex: 2 1 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .about-text p {
+                font-family: sans-serif;
+                font-size: 1rem;
+                line-height: 1.5;
+                margin-bottom: 1rem;
+            }
+
+            .about-text .big {
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+
+            @media (max-width: 768px) {
+                .about-wrapper {
+                    flex-direction: column;
+                }
+
+                .about-photo {
+                    max-width: 100%;
+                }
+
+                .about-photo img {
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="about-wrapper">
+            <!-- IMAGE SECTION -->
+            <div class="about-photo">
+                <img
+                    src="https://picsum.photos/360/640"
+                    alt="Placeholder image of Laura"
+                />
+            </div>
+
+            <!-- TEXT SECTION -->
+            <div class="about-text">
+                <p class="big">
+                    Nice to meet you! I'm Laura: <b>designer</b>, cat lover and
+                    amateur cook.
+                </p>
+
+                <p>
+                    My journey with design began at the age of 12, when I read
+                    <b>"The Non-Designer’s Design Book"</b>. That early spark
+                    led me to pursue a technical course in Multimedia, where I
+                    studied design fundamentals alongside Advertising,
+                    Photography, and Videomaking.
+                </p>
+
+                <p>
+                    While earning my bachelor’s degree in Graphic Design, I was
+                    introduced to UX Design — and everything changed. I landed
+                    an internship at Itaú Unibanco, Brazil’s largest bank and
+                    one of the country’s most respected design institutions.
+                    During my time there, I realized that UX Design had the
+                    power to drive real impact and solve complex business
+                    problems. I was hooked.
+                </p>
+
+                <p>
+                    It’s been over six years since that first encounter with
+                    Product Design, and I’m still deeply passionate about the
+                    craft. I love bringing ideas to life, collaborating with
+                    peers, and shaping concepts into thoughtful, effective
+                    solutions.
+                </p>
+
+                <p>
+                    Outside of work, I enjoy cooking and baking, spending time
+                    with my cat Olívia, and reading. I’m also learning to play
+                    the guitar and working on my German. If you'd like to chat
+                    about design, collaboration, or just grab a coffee and
+                    exchange ideas — feel free to reach out. I’m always up for a
+                    good conversation.
+                </p>
+            </div>
+        </section>
+
